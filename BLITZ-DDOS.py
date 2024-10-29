@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+lmport os
 import random
 import socket
 import string
@@ -7,11 +7,31 @@ import sys
 import threading
 import time
 
-# Parse inputs
-host = ""
-ip = ""
-port = 0
-num_requests = 0
+# Warna ASCII Art
+Z = '\033[1m'
+H = '\033[31m'
+A = '\033[32m'
+N = '\033[33m'
+O = '\033[0m'
+
+# Mengurai inputs
+if host = ""
+   ip = ""
+   port = 0
+   num_requests = 0
+
+else:
+     os.system("clear")
+print(" ")
+print("\033[31m      ®®®®®®®    ®®       ®®  ®®®®®®®®®®  ®®®®®®®®®® \033[0m")
+print("\033[31m      ®®     ®®  ®®       ®®      ®®              ®® \033[0m")
+print("\033[31m      ®®     ®®  ®®       ®®      ®®            ®®   \033[0m")
+print("\033[1m       ®®®®®®®    ®®       ®®      ®®          ®®     \033[0m")
+print("\033[1m       ©©     ©©  ©©       ©©      ©©        ©©       \033[0m")
+print("\033[1m       ©©     ®®  ©©       ©©      ©©      ©©         \033[0m")
+print("\033[33m      ©©©©©©©    ©©©©©©©  ©©      ©©      ©©©©©©©©©© \033[0m")
+print("\033[33m                                                          \033[0m")
+print("\033[33m                                                             \033[0m")
 
 if len(sys.argv) == 2:
     port = 80
