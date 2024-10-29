@@ -15,13 +15,12 @@ N = '\033[33m'
 O = '\033[0m'
 
 # Mengurai inputs
-if host = ""
-   ip = ""
-   port = 0
-   num_requests = 0
+host = ""
+ip = ""
+port = 0
+num_requests = 0
 
-else:
-     os.system("clear")
+
 print(" ")
 print("\033[31m      ®®®®®®®    ®®       ®®  ®®®®®®®®®®  ®®®®®®®®®® \033[0m")
 print("\033[31m      ®®     ®®  ®®       ®®      ®®              ®® \033[0m")
