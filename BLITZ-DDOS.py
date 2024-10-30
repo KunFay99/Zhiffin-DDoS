@@ -100,7 +100,7 @@ def attack():
         dos.close()
 
 
-print (f"[#] Attack started on {host} ({ip} ) || Port: {str(port)} || # Requests: {str(num_requests)}")
+print (f"\033[33mSent With Gaja 0======>> funch zeoon massage {i + 1} \033[0m"))
 
 # Memunculkan thread per permintaan
 all_threads = []
