@@ -25,9 +25,9 @@ print(" ")
 print("\033[31m      ®®®®®®®    ®®       ®®  ®®®®®®®®®®  ®®®®®®®®®® \033[0m")
 print("\033[31m      ®®     ®®  ®®       ®®      ®®              ®® \033[0m")
 print("\033[31m      ®®     ®®  ®®       ®®      ®®            ®®   \033[0m")
-print("\033[1m       ®®®®®®®    ®®       ®®      ®®          ®®     \033[0m")
-print("\033[1m       ©©     ©©  ©©       ©©      ©©        ©©       \033[0m")
-print("\033[1m       ©©     ®®  ©©       ©©      ©©      ©©         \033[0m")
+print("\033[1m      ®®®®®®®    ®®       ®®      ®®          ®®     \033[0m")
+print("\033[1m      ©©     ©©  ©©       ©©      ©©        ©©       \033[0m")
+print("\033[1m      ©©     ®®  ©©       ©©      ©©      ©©         \033[0m")
 print("\033[33m      ©©©©©©©    ©©©©©©©  ©©      ©©      ©©©©©©©©©© \033[0m")
 print("\033[33m                                                          \033[0m")
 print("\033[33m                                                             \033[0m")
@@ -65,7 +65,7 @@ def print_status():
 
     thread_num += 1
     #print output pada baris yang sama
-    sys.stdout.write(f"\r {time.ctime().split( )[3]} [{str(thread_num)}] ===>>-=====>>>-==========>>> Hold Your Tears ==========>>>-===============>>>>>-====================>>>>>>")
+    sys.stdout.write(f"\r {time.ctime().split( )[3]} [{str(thread_num)}] =>-==>-===> Hold Your Tears ====>-====>-====>>l>")
     sys.stdout.flush()
     thread_num_mutex.release()
 
