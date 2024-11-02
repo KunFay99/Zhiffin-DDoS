@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-lmport os
+import os
 import random
 import socket
 import string
