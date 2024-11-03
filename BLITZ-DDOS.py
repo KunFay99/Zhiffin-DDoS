@@ -34,10 +34,10 @@ print("\033[33m                                                             \033
 
 if len(sys.argv) == 2:
     port = 80
-    num_requests = 100000000
+    num_requests = 100000
 elif len(sys.argv) == 3:
     port = int(sys.argv[2])
-    num_requests = 100000000
+    num_requests = 100000
 elif len(sys.argv) == 4:
     port = int(sys.argv[2])
     num_requests = int(sys.argv[3])
