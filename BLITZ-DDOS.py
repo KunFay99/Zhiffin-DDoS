@@ -100,7 +100,7 @@ def attack():
         dos.close()
 
 
-print (f"\033[33mSent With Gaja 0======>> funch zeoon massage {1 + 1} \033[0m")
+print (f"\033[33mSent 0======>> funch zeoon massage {1 + 1} \033[0m")
 
 # Memunculkan thread per permintaan
 all_threads = []
