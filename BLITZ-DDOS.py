@@ -65,7 +65,7 @@ def print_status():
 
     thread_num += 1
     #print output pada baris yang sama
-    sys.stdout.write(f"\033[33m{0} =>>-BLIT-ATTACK Sent attack status |\033[0m".format(round))
+    sys.stdout.write(f"\033[33m{0} BIRRUH BIDDAM-NAFDIKA-YA AQSHA Sent-attack-status |\033[0m".format(round))
     sys.stdout.flush()
     thread_num_mutex.release()
 
