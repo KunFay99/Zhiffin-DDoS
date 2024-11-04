@@ -8,11 +8,16 @@ import threading
 import time
 
 # Warna ASCII Art
-Z = '\033[1m'
-H = '\033[31m'
-A = '\033[32m'
-N = '\033[33m'
-O = '\033[0m'
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    RESET = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
 # Mengurai inputs
 host = ""
@@ -22,15 +27,23 @@ num_requests = 0
 
 
 print(" ")
-print("\033[31m      ®®®®®®®    ®®       ®®  ®®®®®®®®®®  ®®®®®®®®®® \033[0m")
-print("\033[31m      ®®     ®®  ®®       ®®      ®®              ®® \033[0m")
-print("\033[31m      ®®     ®®  ®®       ®®      ®®            ®®   \033[0m")
-print("\033[1m      ®®®®®®®    ®®       ®®      ®®          ®®     \033[0m")
-print("\033[1m      ©©     ©©  ©©       ©©      ©©        ©©       \033[0m")
-print("\033[1m      ©©     ®®  ©©       ©©      ©©      ©©         \033[0m")
-print("\033[33m      ©©©©©©©    ©©©©©©©  ©©      ©©      ©©©©©©©©©© \033[0m")
-print("\033[33m                                                          \033[0m")
-print("\033[33m                                                             \033[0m")
+print("\033[95m       ®® @ @   ®®       ®  ®®  ®® ® ® @  ®® ® ® ®  ®®  @@         @    \033[0m")
+print("\033[95m     ®®         ®®       ®  ®®  ®®        @®        ®®  @@ @       @    \033[0m")
+print("\033[95m    ®®          ®®       ®  ®®  ®®        ®®        @@  @@  @      @    \033[0m")
+print("\033[92m      ®®        ®®       ®  ®®  ®®        ®®        ®®  @@   @     @    \033[0m")
+print("\033[92m        ©©      ©© @ © © ©  ©©  ©© @ @    @@ @ @    @@  @@    @    @    \033[0m")
+print("\033[92m          ©©    ®®       ©  ©©  ©©        ©©        ©©  ©©     ©   ©    \033[0m")
+print("\033[96m            ©   ©©       ©  ©©  ©©        ©©        ©©  ©©      ©  ©    \033[0m")
+print("\033[96m            ©©  ©©       ©  ©©  ©©        ©©        ©©  ©©       © ©    \033[0m")
+print("\033[96m      © © ©©    ©©       ©  ©©  ©©        ©©        ©©  ©©         ©    \033[0m")
+print("\033[94m          °° °  °°       °  °°  °°        °°        °°  °°         °    \033[0m")
+print("\033[94m            °    °       °   °   °         °         °   °         °    \033[0m")
+print("\033[93m==========================================================================      \033[0m")
+print("\033[4m||                                                                               \033[0m")
+print("\033[4m||                                                                               \033[0m")
+print("\033[4m||                                                                               \033[0m")
+print("\033[4m||                                                                               \033[0m")
+print("\033[93m==========================================================================      \033[0m")
 
 if len(sys.argv) == 2:
     port = 80
@@ -66,7 +79,7 @@ def print_status():
     thread_num += 1
     #print output pada baris yang sama
     sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"\033[33m{0} Shiffin DDoS    sedang mengirimkan paket|\033[0m".format(round))
+    print(f"\033[96m{0} Shiffin DDoS\003[0m") "\033[93msedang mengirimkan paket|\033[0m".format(round))
     sys.stdout.flush()
     thread_num_mutex.release()
 
