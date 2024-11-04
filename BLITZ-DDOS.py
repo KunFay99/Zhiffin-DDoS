@@ -66,7 +66,7 @@ def print_status():
     thread_num += 1
     #print output pada baris yang sama
     sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"\033[33m{0} BLITZ ———> send packages in a specified quantity|\033[0m".format(ground))
+    print(f"\033[33m{0} Shiffin DDoS    sedang mengirimkan paket|\033[0m".format(ground))
     sys.stdout.flush()
     thread_num_mutex.release()
 
