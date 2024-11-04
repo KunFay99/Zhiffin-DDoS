@@ -65,7 +65,7 @@ def print_status():
 
     thread_num += 1
     #print output pada baris yang sama
-    sys.stdout.write(f"\033[31m {time.ctime().split()[3]} [{str(thread_num)}]=>>>>>>>>-BLIT ATTACK       Sent attack status|         \033[0m")
+    sys.stdout.write(f"\033[1m {time.ctime().split()[3]} [{str(thread_num))] BIRRUH BIDDAM NAFDHIKA YAA AQSHA ====================>>>>>> Sent attack status|                \033[0m")
     sys.stdout.flush()
     thread_num_mutex.release()
 
