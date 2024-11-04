@@ -65,7 +65,7 @@ def print_status():
 
     thread_num += 1
     #print output pada baris yang sama
-    sys.stdout.write(f"\033[31m {time.ctime().split()[3]} [{str(thread_num)}]"\033[33m =>>>>>>>>-BLIT ATTACK Sent attack status|\033[0m".)
+    sys.stdout.write(f"\033[31m {time.ctime().split()[3]} [{str(thread_num)}]=>>>>>>>>-BLIT ATTACK Sent attack status|\033[0m".)
     sys.stdout.flush()
     thread_num_mutex.release()
 
@@ -100,7 +100,7 @@ def attack():
         dos.close()
 
 
-print (f"\033[33mSent 0======>> funch zeoon massage {1 + 1} \033[0m")
+print (f"\033[33mSent massage {1 + 1}")
 
 # Memunculkan thread per permintaan
 all_threads = []
