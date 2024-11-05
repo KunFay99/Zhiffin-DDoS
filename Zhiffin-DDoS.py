@@ -83,7 +83,7 @@ def print_status():
     thread_num += 1
     #print output pada baris yang sama
     sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"\033[92m[\033[97m+\033[92mShiffin-DDoS: " +str()+ "\033[96mMengirimkan paket " +ip+ "\033[0m" )
+    print(f"\033[92m[\033[97m+\033[92mSHIFFIN-DDoS: " +str()+ "\033[96mMENGIRIMKAN-PAKET " +ip+ "\033[0m" )
     sys.stdout.flush()
     thread_num_mutex.release()
 
