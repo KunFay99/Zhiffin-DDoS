@@ -41,8 +41,8 @@ print("\033[96m                 ©©     ©     ©©     ©    ©©     ©   ©�
 print("\033[94m                 ©©     ©     ©©     ©    ©©     ©      ©©               \033[0m")
 print("\033[94m                 ©© © ©       ©© © ©        ©© ©     © ®©                \033[0m")
 print("\033[94m                 ••  •        ••             •••      ••                 \033[0m")
-print("\033[94m                  •            •              •      •                   \033[0m")
-print("\033[93m==================================================================================        \033[0m")
+print("\033[94m                  •            •              •       •                   \033[0m")
+print("\033[93m==================================================================================       \033[0m")
 print("\033[4m||                                                                                        \033[0m")
 print("\033[4m||                                                                                        \033[0m")
 print("\033[4m||                                                                                        \033[0m")
@@ -83,7 +83,7 @@ def print_status():
     thread_num += 1
     #print output pada baris yang sama
     sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"\033[92m[\033[97m+\033[92mShiffin DDoS: " +str(u)+ " \033[94<-- Mengirimkan paket " +ip+ " -->" )
+    print(f"\033[92m[\033[97m+\033[92mShiffin-DDoS: " +str()+ "\033[96mMengirimkan paket " +ip+ "\033[0m" )
     sys.stdout.flush()
     thread_num_mutex.release()
 
