@@ -84,13 +84,6 @@ def print_status():
     #print output pada baris yang sama
     sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
     print(f"  \033[92mZhiffin  \033[93mSent packet:. " +ip+ "\033[0m" )
-    sys.stdout.flush()
-    sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"  \033[92mZhiffin  \033[93mSent packet::.. " +ip+ "\033[0m" )
-    sys.stdout.flush()
-    sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"  \033[92mZhiffin  \033[93mSent packet:::... " +ip+ "\033[0m" )
-    sys.stdout.flush()
     thread_num_mutex.release()
 
 # Hasilkan Jalur URL
