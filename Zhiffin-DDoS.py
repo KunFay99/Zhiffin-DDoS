@@ -83,10 +83,13 @@ def print_status():
     thread_num += 1
     #print output pada baris yang sama
     sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"  \033[93mZhiffin  \033[97mSent packet:. " +ip+ "\033[0m" )
+    print(f"  \033[33mZhiffin  \033[93mSent packet:. " +ip+ "\033[0m" )
     sys.stdout.flush()
     sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"  \033[93mZhiffin  \033[97mSent packet::.. " +ip+ "\033[0m" )
+    print(f"  \033[33mZhiffin  \033[93mSent packet::.. " +ip+ "\033[0m" )
+    sys.stdout.flush()
+    sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
+    print(f"  \033[33mZhiffin  \033[93mSent packet:::... " +ip+ "\033[0m" )
     sys.stdout.flush()
     thread_num_mutex.release()
 
