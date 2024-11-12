@@ -82,7 +82,8 @@ def print_status():
 
     thread_num += 1
     #print output pada baris yang sama
-    sys.stdout.write(f"\033[33m{time.ctime().split()[3]} [{str(thread_num)}\033[1mSent packet::.. " +ip+ \033[0m"])
+    sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
+    print(f"\033[33mSent packet::.. " +ip+ "\033[0m" )
     sys.stdout.flush()
     thread_num_mutex.release()
     
