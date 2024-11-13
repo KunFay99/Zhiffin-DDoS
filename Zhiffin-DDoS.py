@@ -88,7 +88,7 @@ def print_status():
     print(f"  \033[92mZhiffin  \033[97mSent packet:. " +ip+ "\033[0m" )
     sys.stdout.write(f"\033[33m {time.ctime().split()[3]} [{str(thread_num)}]\0330m")
     print(f"  \033[92mZhiffin  \033[97mSent packet::.. " +ip+ "\033[0m" )
-    sys.stdout.write(f"\03[33m {time.ctime().split()[3]} [{str(thread_num)}]\033[0m")
+    sys.stdout.write(f"\033[33m {time.ctime().split()[3]} [{str(thread_num)}]\033[0m")
     print(f"  \033[92mZhiffin  \033[97mSent packet:::... " +ip+ "\033[0m" )
     thread_num_mutex.release()
 
