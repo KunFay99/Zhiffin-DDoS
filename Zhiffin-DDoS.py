@@ -82,11 +82,10 @@ def print_status():
 
     thread_num += 1
     #print output pada baris yang sama
-    logger.info("Notify socket = {0}".format(str(s_adr)))
-    ph_value = str(line)
-    print("/input/post.json?&node=" + str(pooldb.ph_node)
+    ph_value = str(slice)
+    print("/input/post.json?&node=" + str(thread_num.ph_node),
     orp_value = str(line2)
-    print("/input/post.json?&node=" + str(pooldb.orp_node)
+    print("/input/post.json?&node=" + str(thread_num.ph_node),
     current_military_time = int(datetime.datetime.now().strftime('%H%M'))
     sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
     print(f"  \033[33mZhiffin  \033[92mSent packet:. " +ip+ "\033[0m" )
