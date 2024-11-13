@@ -84,12 +84,12 @@ def print_status():
     #print output pada baris yang sama
     ph_value = str(slice)
     orp_value = str(slice)
-    sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"  \033[33mZhiffin  \033[4mSent packet:. " +ip+ "\033[0m" )
-    sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"  \033[33mZhiffin  \033[4mSent packet::.. " +ip+ "\033[0m" )
-    sys.stdout.write(f" {time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f"  \033[33mZhiffin  \033[4mSent packet:::... " +ip+ "\033[0m" )
+    sys.stdout.write(f"\033[33m {time.ctime().split()[3]} [{str(thread_num)}]\033[0m")
+    print(f"  \033[92mZhiffin  \033[97mSent packet:. " +ip+ "\033[0m" )
+    sys.stdout.write(f"\033[33m {time.ctime().split()[3]} [{str(thread_num)}]\0330m")
+    print(f"  \033[92mZhiffin  \033[97mSent packet::.. " +ip+ "\033[0m" )
+    sys.stdout.write(f"\03[33m {time.ctime().split()[3]} [{str(thread_num)}]\033[0m")
+    print(f"  \033[92mZhiffin  \033[97mSent packet:::... " +ip+ "\033[0m" )
     thread_num_mutex.release()
 
 # Hasilkan Jalur URL
