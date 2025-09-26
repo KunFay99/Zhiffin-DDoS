@@ -14,7 +14,7 @@ ip = ""
 port = 0
 num_requests = 0
 
-# warna ASCII ASCII
+# warna ASCII art
 os.system("clear")
 print("""
 \033[1;33m╔═════════════════════════════════════════════════════════════════════╗
