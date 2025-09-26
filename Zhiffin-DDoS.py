@@ -45,7 +45,7 @@ elif len(sys.argv) == 4:
     port = int(sys.argv[2])
     num_requests = int(sys.argv[3])
 else:
-    print (f"ERROR\n Usage: {sys.argv[0]} < Hostname > < Port > < Number_of_Attacks >")
+    print (f"\nUsage: {sys.argv[0]} [ Hostname ] [ Port ] [ Number_of_Attacks ]")
     sys.exit(1)
 
 # Ubah FQDN ke IP
