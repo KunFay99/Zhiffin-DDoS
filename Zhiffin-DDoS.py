@@ -71,9 +71,9 @@ def print_status():
     ph_value = str(slice)
     orp_value = str(slice)
     sys.stdout.write(f"\033[0;34m{time.ctime().split()[3]} \033[0;36m[{str(thread_num)}]\033[0m")
-    print(f" \033[0;31mZHIFFIN\033[1;37m--\033[0;37mWASBI \033[1;33m:: \033[97mRequest Sent \033[32m"+ip+"\033[0m" )
+    print(f" \033[0;31mZHIFFIN\033[1;37m--\033[33mW A S B I \033[1;33m:: \033[97mRequest Sent \033[32m"+ip+"\033[0m" )
     sys.stdout.write(f"{time.ctime().split()[3]} [{str(thread_num)}]")
-    print(f" \033[0;33mZHIFFIN\033[1;37m--\033[0;37mWASBI \033[1;33m:: \033[97mRequest Sent \033[33m"+ip+"\033[0m" )
+    print(f" \033[0;33mZHIFFIN\033[1;37m--\033[32mW A S B I \033[1;33m:: \033[97mRequest Sent \033[33m"+ip+"\033[0m" )
     thread_num_mutex.release()
     
 # Hasilkan Jalur URL
